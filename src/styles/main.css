@@ -1,0 +1,233 @@
+:root {
+    --font-size-h1: 2.5rem;
+    --font-size-h2: 2rem;
+    --font-size-h3: 1.75rem;
+    --font-size-h4: 1.5rem;
+    --font-size-h5: 1.25rem;
+    --font-size-body: 1rem;
+    --font-size-small: 0.875rem;
+    --font-size-caption: 0.75rem;
+    --font-size-h1-mobile: 2rem;
+    --font-size-h2-mobile: 1.75rem;
+    --font-size-h3-mobile: 1.5rem;
+    --font-size-h4-mobile: 1.25rem;
+    --font-size-body-mobile: 0.9375rem;
+    --font-size-small-mobile: 0.8125rem;
+    --font-size-caption-mobile: 0.75rem;
+    --font-size-base: 16px;
+    --line-height-title: 1.2;
+    --line-height-body: 1.5;
+
+    --font_main: "Inter", Arial, sans-serif;
+    --font_titles: "porter", Arial, sans-serif;
+
+    --red: #EF5A6F;
+    --blue: #536493;
+    --beige: #FFF1DB;
+    --black: #000000;
+    --accent-color: #6366f1;
+}
+
+* {
+    margin: 0;
+    font-size: var(--font-size-base);
+    font-family: var(--font_main);
+}
+
+body {
+    position: relative;
+}
+
+main {
+
+    display: flex;
+    position: relative;
+    flex-direction: column;
+
+}
+
+section {
+    flex: none;
+    height: calc( 100vh - 73px);
+    display: flex;
+    flex-direction: column;
+}
+
+.section_1 {
+    background-color: red;
+    margin-top: 73px;
+}
+
+._photo_me {
+    position: absolute;
+    right: 0;
+    top: -21px;
+    max-width: 46%;
+    height: auto;
+}
+
+._group_name {
+    position: relative;
+    margin: 0 15px;
+    padding: 20px 34px;
+
+    ._sub_name {
+        position: absolute;
+        left: 0;
+        top: 10px;
+        -webkit-transform: rotate(-28deg);
+        line-height: var(--line-height-body);
+        font-weight: bold;
+        color: var(--blue);
+        font-size: var(--font-size-body);
+    }
+
+    ._name {
+        margin: 0;
+        line-height: var(--line-height-title);
+        font-family: var(--font_titles);
+        font-size: var(--font-size-h1);
+        color: var(--red);
+    }
+
+}
+
+._about_me {
+    margin: 0 15px;
+    position: relative;
+    background-color: var(--beige);
+    padding: 34px;
+    border-radius: 20px;
+
+    ._title_bg {
+        top: -10%;
+        position: absolute;
+        font-size: 15rem;
+        font-weight: bold;
+        font-style: italic;
+        color: var(--black);
+        opacity: 0.1;
+    }
+
+    ._title {
+        color: var(--blue);
+        margin: 0;
+        font-size: 6rem;
+        line-height: 50px;
+        font-weight: bold;
+
+        ._sub {
+            color: var(--red);
+            font-size: 4rem;
+        }
+    }
+
+    ._text {
+        margin-top: 20px;
+        display: block;
+        max-width: 915px;
+        font-size: 1rem;
+    }
+
+}
+
+._about_me_cont {
+    margin-top: 20px;
+    background: var(--red);
+    height: 224px;
+    display: flex;
+    justify-content: space-between;
+
+    ._connect {
+        display: flex;
+
+        ._text {
+            color: var(--beige);
+        }
+
+    }
+
+    ._text {
+        max-width: 300px;
+        color: var(--beige);
+        z-index: 1;
+    }
+
+}
+
+.section_2 {
+    background-color: blue;
+    margin-top: 73px;
+
+    ._skills_exp {
+        display: flex;
+    }
+
+    .skills{
+        margin-top: 10px;
+    }
+
+    ._icons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .skill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .skill-icon {
+        width: 60px;
+        height: 60px;
+        background-color: var(--light-gray);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .skill-icon svg {
+        width: 30px;
+        height: 30px;
+        fill: var(--primary-color);
+    }
+
+    .skill-name {
+        font-weight: 600;
+        color: var(--primary-color);
+    }
+
+    .job {
+        margin-bottom: 30px;
+        position: relative;
+    }
+
+    .job-title {
+        font-weight: 600;
+        font-size: 1.1em;
+        color: var(--primary-color);
+    }
+
+    .job-company {
+        font-weight: 400;
+        color: var(--text-color);
+    }
+
+    .job-date {
+        font-size: 0.9em;
+        color: var(--text-color);
+        opacity: 0.8;
+    }
+
+    .highlight {
+        color: var(--accent-color);
+    }
+
+}
