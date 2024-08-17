@@ -1,0 +1,16 @@
+.container {
+    position: relative;
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+main{
+    position: relative;
+    max-width: 1920px;
+    margin: 0 auto
+}
+
+.section_1{
+    position: relative;
+}

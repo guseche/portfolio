@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'porter';
+    src: url('../../../public/assets/fonts/porter-sans-inline-block.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --font-size-h1: 2.5rem;
+    --font-size-h2: 2rem;
+    --font-size-h3: 1.75rem;
+    --font-size-h4: 1.5rem;
+    --font-size-h5: 1.25rem;
+    --font-size-body: 1rem;
+    --font-size-small: 0.875rem;
+    --font-size-caption: 0.75rem;
+    --font-size-h1-mobile: 2rem;
+    --font-size-h2-mobile: 1.75rem;
+    --font-size-h3-mobile: 1.5rem;
+    --font-size-h4-mobile: 1.25rem;
+    --font-size-body-mobile: 0.9375rem;
+    --font-size-small-mobile: 0.8125rem;
+    --font-size-caption-mobile: 0.75rem;
+    --font-size-base: 16px;
+    --line-height-title: 1.2;
+    --line-height-body: 1.5;
+
+    --font_main: "Inter", Arial, sans-serif;
+    --font_titles: "porter", Arial, sans-serif;
+
+    --red: #EF5A6F;
+    --blue: #536493;
+    --beige: #FFF1DB;
+    --black: #000000;
+    --accent-color: #6366f1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font_titles);
+    color: #333;
+}
+
+p {
+    font-family: var(--font_main);
+    font-size: 1em;
+    font-weight: 400;    
+    margin-bottom: 1em;
+}
+
+._text {
+    font-family: var(--font_main);
+    font-weight: 400;    
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+._title_main {
+    font-family: var(--font_titles);
+    color: var(--red);
+    font-size: 3.75rem;
+    padding-top: 20px;
+}
+
+._sub_title {
+    position: absolute;
+    -webkit-transform: rotate(-30deg);
+    font-weight: bold;
+    color: var(--blue);
+    font-size: var(--font-size-body);
+    font-size: 1.2rem;
+    top: 24px;
+    left: -45px;
+    font-weight: 700;
+
+}
+
+.about_title{
+    font-family: var(--font_main);
+    color: var(--blue);
+    font-size: 3.5rem;
+
+    .about_title_sub{
+        font-size: 4rem;
+        color: var(--red);
+    }
+}
