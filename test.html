@@ -1,61 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <title>Swiper demo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Following Circle</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f6d86c;
+            margin: 0;
+        }
 
-  <style>
-    html,
-    body {
-      position: relative;
-      height: 100%;
-    }
+        .circle {
+            position: relative;
+            width: 250px; /* Aumentado para acomodar los círculos externos e internos */
+            height: 250px;
+        }
 
-    body {
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: #000;
-      margin: 0;
-      padding: 0;
-    }
+        .inner-circle, .outer-circle {
+            position: absolute;
+            border-radius: 50%;
+            border: 2px solid black;
+        }
 
-    swiper-container {
-      width: 100%;
-      height: 100%;
-    }
+        .inner-circle {
+            width: 180px;
+            height: 180px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
 
-    swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+        .outer-circle {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
 
-    swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  </style>
+        .arrow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 90px; /* Tamaño de la flecha aumentado */
+            color: #ffff;
+        }
+
+        svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: rotate(0deg);
+            transform-origin: center;
+        }
+
+        text {
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            fill: black;
+        }
+
+        @keyframes rotate {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        svg {
+            animation: rotate 10s linear infinite;
+        }
+    </style>
 </head>
-
 <body>
-
-  <swiper-container class="mySwiper" pagination="true">
-    <swiper-slide>
-        <div>slide1</div>
-        <div>slide2</div>
-    </swiper-slide>
-    <swiper-slide>Slide 2</swiper-slide>
-  </swiper-container>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <div class="circle">
+        <div class="outer-circle"></div>
+        <div class="inner-circle"></div>
+        <div class="arrow">↗</div>
+        <svg viewBox="0 0 250 250">
+            <defs>
+                <path id="circlePath" d="M 125, 125 m -100, 0 a 100,100 0 1,1 200,0 a 100,100 0 1,1 -200,0 "></path>
+            </defs>
+            <text>
+                <textPath href="#circlePath">
+                    View all Projects · View all Projects · View all Projects · View all Projects ·
+                </textPath>
+            </text>
+        </svg>
+    </div>
 </body>
-
 </html>

@@ -1,10 +1,12 @@
 .skills{
     margin-top: 50px;
-    height: 90dvh;
+    height: 93dvh;
+    max-height: 850px;
 }
 
 .skills_title{
     padding-top: 30px;
+    font-family: var(--font_main);
 }
 
 .skills_icons {
@@ -61,6 +63,7 @@
 
 .jobs{
     height: 665px;
+    margin-bottom: 20px;
 }
 
 .job{

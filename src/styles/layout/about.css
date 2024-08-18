@@ -79,7 +79,9 @@
         top: 30px;
         display: block;
         width: 1.5vw;
+        max-width: 30px;
         height: 1.5vw;
+        max-height: 30px;
         border-bottom: 4px solid white;
         border-right: 4px solid white;
         animation: animate 2s infinite;
