@@ -1,0 +1,120 @@
+.skills{
+    margin-top: 50px;
+    height: 90dvh;
+}
+
+.skills_title{
+    padding-top: 30px;
+}
+
+.skills_icons {
+    display: grid;
+    grid-template-columns: repeat(3, 0.2fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+}
+
+.skill{
+    display: inline-block;
+    text-align: center;
+}
+
+.skills_desc{
+    max-width: 800px;
+}
+
+.skill-icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--red);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto 30px;
+}
+
+.skill-icon svg {
+    width: 30px;
+    height: 30px;
+    fill: whitesmoke;
+}
+
+.skill-name{
+    font-weight: 700;
+}
+
+.experience{
+    position: absolute;
+    max-height: 100px;
+    top:0;
+    right: 0;
+    width: 500px;
+}
+
+.experience_title{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.jobs{
+    height: 665px;
+}
+
+.job{
+    border-top-width: 2px;
+    border-top-color: black;
+    border-top-style: solid;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.job_style_title{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.job-date{
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+.job-title{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.job-responsibilities{
+    list-style: none;
+
+    li{
+        margin-top: 10px;
+    }
+}
+
+.slider_pagination{
+    display: flex;
+    justify-content: center;
+}
+
+.slider_pagination_btn {
+    display: inline-block;
+    padding: 6px;
+    margin: 5px;
+    background-color: #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+ 
+    /* override default button styles */
+    border: none;
+    outline: none;
+ }
+ .slider_pagination_btn:hover {
+    background-color: #aaa;
+ }
+ .slider_pagination_btn:focus {
+    background-color: #777;
+  }

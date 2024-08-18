@@ -1,0 +1,42 @@
+[
+    {
+        "date": "2023 - Presente",
+        "position": "Ingeniero de Calidad",
+        "company": "Capitole Consulting",
+        "activities": [
+            "✅ Certificación y Soporte: Aseguro la calidad en múltiples niveles de pruebas y brindo soporte técnico al equipo.",
+            "📈 Mentoría y Desarrollo: Guío a ingenieros semi-senior en su crecimiento técnico y habilidades blandas.",
+            "🤖 Automatización de Pruebas: Implemento pruebas automatizadas en Banco Agrícola usando Serenity BDD, Playwright y Karate."
+        ]
+    },
+    {
+        "date": "2021 - 2023",
+        "position": "Ingeniero de Calidad",
+        "company": "Devcognitio S.A.S",
+        "activities": [
+            "✅ Certificación y Soporte: Aseguro la calidad en múltiples niveles de pruebas y brindo soporte técnico al equipo.",
+            "📈 Mentoría y Desarrollo: Guío a ingenieros semi-senior en su crecimiento técnico y habilidades blandas.",
+            "🤖 Automatización de Pruebas: Implemento pruebas automatizadas en Banco Agrícola usando Serenity BDD, Playwright y Karate."
+        ]
+    },
+    {
+        "date": "2018 - 2021 ",
+        "position": "Analista de Software",
+        "company": "Grupo Bancolombia",
+        "activities": [
+            "🛠️ Liderazgo Técnico: Facilito sesiones de alineación técnica para el equipo de medios de pago.",
+            "📋 Mejores Prácticas: Garantizo el cumplimiento de buenas prácticas en pruebas automáticas.",
+            "☁️ Integración DevOps: Apoyo la integración del ciclo DevOps para APIs y sistemas AS400 utilizando Azure."
+        ]
+    },
+    {
+        "date": "2018 - 2018 ",
+        "position": "Analista de Certificación",
+        "company": "Accenture",
+        "activities": [
+            "🔄 Migración a Automatización: Lideré la transición de pruebas manuales a automatizadas para préstamos en Grupo Bancolombia.",
+            "📚 Desarrollo de Librerías: Creé una biblioteca para pruebas automatizadas con Serenity BDD y Jacob para AS400.",
+            "🎓 Capacitación en Automatización: Entrené al equipo en procesos de pruebas automáticas en aplicaciones AS400."
+        ]
+    }
+]

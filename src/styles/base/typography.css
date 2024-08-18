@@ -89,3 +89,10 @@ p {
         color: var(--red);
     }
 }
+
+._title_normal{
+    font-family: var(--font_main);
+    font-weight: 700;    
+    font-size: 2em;
+    margin-bottom: 1em;
+}
