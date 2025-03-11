@@ -4,75 +4,282 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./favicon.ico" type="image/icon type">
-    <link rel="stylesheet" href="../src/styles/main2.css">
-    <title>Gabriel Useche</title>
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
-
-    <header>
+    <header class="site-header">
         <div class="container">
-            <nav class="menu">
-                <img src="./public/assets/images/logo.svg" alt="Logo Gabriel Jaime Useche Ossa">
-                <ul class="menu-items">
-                    <li><a href="#sobre-mi">Sobre mí</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+            <nav class="site-nav">
+                <a href="./index.html"><img class="icon" src="./assets/images/logo.svg" /></a>
+                <ul class="nav-list">
+                    <li><a href="#about">Sobre mí</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
+        <div class="grid-container">
 
-        <section class="hero">
-            <div class="container">
-                <span class="_sub_title">Sobre mi</span>
-                <h2 class="_title_main">Gabriel Jaime </br> Useche Ossa</h2>
+            <section class="hero box">
+                <svg id="circle-svg" viewBox="-10 -10 120 120">
+                    <path id="curve" fill="transparent" d="M 50,0 A 50,50 0 1,1 49.999,0 Z" />
+                    <text>
+                        <textPath xlink:href="#curve">
+                            GABRIEL USECHE <tspan>QA AUTOMATOR</tspan>
+                        </textPath>
+                    </text>
+                </svg>
+                <img class="avatar" src="./assets/images/hero.svg" alt="avatar gabriel useche">
+            </section>
+
+            <section class="emojis box">
+                <div class="slider">
+                    <div class="list" style="--delay: 12s">
+                        <div class="item" style="--position: 1"><img src="./assets/images/emoji1.svg" alt=""></div>
+                        <div class="item" style="--position: 2"><img src="./assets/images/emoji2.svg" alt=""></div>
+                        <div class="item" style="--position: 3"><img src="./assets/images/emoji1.svg" alt=""></div>
+                        <div class="item" style="--position: 4"><img src="./assets/images/emoji2.svg" alt=""></div>
+                        <div class="item" style="--position: 5"><img src="./assets/images/emoji1.svg" alt=""></div>
+                        <div class="item" style="--position: 6"><img src="./assets/images/emoji2.svg" alt=""></div>
+                        <div class="item" style="--position: 7"><img src="./assets/images/emoji1.svg" alt=""></div>
+                        <div class="item" style="--position: 8"><img src="./assets/images/emoji2.svg" alt=""></div>
+                        <div class="item" style="--position: 9"><img src="./assets/images/emoji1.svg" alt=""></div>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="list" style="--delay: 14s">
+                        <div class="item" style="--position: 1"><img src="./assets/images/emoji2.svg" alt=""></div>
+                        <div class="item" style="--position: 2"><img src="./assets/images/emoji1.svg" alt=""></div>
+                        <div class="item" style="--position: 3"><img src="./assets/images/emoji2.svg" alt=""></div>
+                        <div class="item" style="--position: 4"><img src="./assets/images/emoji1.svg" alt=""></div>
+                        <div class="item" style="--position: 5"><img src="./assets/images/emoji2.svg" alt=""></div>
+                        <div class="item" style="--position: 6"><img src="./assets/images/emoji1.svg" alt=""></div>
+                        <div class="item" style="--position: 7"><img src="./assets/images/emoji2.svg" alt=""></div>
+                        <div class="item" style="--position: 8"><img src="./assets/images/emoji1.svg" alt=""></div>
+                        <div class="item" style="--position: 9"><img src="./assets/images/emoji2.svg" alt=""></div>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="list" style="--delay: 16s">
+                        <div class="item" style="--position: 1"><img src="./assets/images/emoji1.svg" alt=""></div>
+                        <div class="item" style="--position: 2"><img src="./assets/images/emoji2.svg" alt=""></div>
+                        <div class="item" style="--position: 3"><img src="./assets/images/emoji1.svg" alt=""></div>
+                        <div class="item" style="--position: 4"><img src="./assets/images/emoji2.svg" alt=""></div>
+                        <div class="item" style="--position: 5"><img src="./assets/images/emoji1.svg" alt=""></div>
+                        <div class="item" style="--position: 6"><img src="./assets/images/emoji2.svg" alt=""></div>
+                        <div class="item" style="--position: 7"><img src="./assets/images/emoji1.svg" alt=""></div>
+                        <div class="item" style="--position: 8"><img src="./assets/images/emoji2.svg" alt=""></div>
+                        <div class="item" style="--position: 9"><img src="./assets/images/emoji1.svg" alt=""></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="meme-box box">
+                <img src="./assets/images/robot.png" alt="bug meme">
+            </section>
+
+            <div class="div4 box">
+                <span>
+                    Create 🛠️ First
+                </span>
+                <span>
+                    [Debug] → Later
+                </span>
             </div>
-        </section>
 
-        <section class="about">
-            <div class="container">
-                <div class="about_me">
-                    <span class="about_bg_title">Testing</span>
-                    <h1 class="about_title">Experto en
-                        <span class="about_title_sub"></br>Automatizacion de pruebas</span>
-                    </h1>
-                    <span class="_text">Creo en el poder de las pruebas automatizadas para crear soluciones de software
-                        robustas, confiables y escalables. Como autodidacta en el desarrollo front y back-end, aporto
-                        años
-                        de experiencia y una pasión
-                        por la tecnología para ayudarte a construir aplicaciones impecables.
-                        Desde el diseño de casos de prueba hasta el despliegue de
-                        pipelines CI/CD, garantizo que tu software cumpla con los
-                        más altos estándares.</span>
+            <div class="div5 box">
+                <canvas id="skillsCanvas"></canvas>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
+                <script>
+
+                    function create() {
+
+                        
+
+                        // // Escuchar cambios de tamaño de pantalla
+                        // window.addEventListener("resize", () => {
+                        //     const shouldBeStatic = window.innerWidth < 850;
+                        //     Body.setStatic(myBody, shouldBeStatic);
+                        // });
+
+                        const { Engine, Render, Runner, Bodies, Composite, Events, Mouse, MouseConstraint } = Matter;
+                        const engine = Engine.create();
+                        const world = engine.world;
+
+                        const isSmallScreen = window.innerWidth < 850;
+
+                        const myBody = Bodies.rectangle(200, 200, 50, 50, {
+                            isStatic: isSmallScreen // Será estático solo si la pantalla es menor a 850px
+                        });
+
+                          // Escuchar cambios de tamaño de pantalla
+                        window.addEventListener("resize", () => {
+                            const shouldBeStatic = window.innerWidth < 850;
+                            Body.setStatic(myBody, shouldBeStatic);
+                        });
+
+                        const render = Render.create({
+                            element: document.getElementById('skillsCanvas').parentElement,
+                            canvas: document.getElementById('skillsCanvas'),
+                            engine: engine,
+                            options: {
+                                width: document.querySelector('.div5').clientWidth,
+                                height: document.querySelector('.div5').clientHeight,
+                                wireframes: false,
+                                background: 'transparent',
+                            }
+                        });
+
+                        Render.run(render);
+                        Runner.run(Runner.create(), engine);
+
+                        const skills = [
+                            'Testing', 'Communication', 'Teamwork', 'Problem-solving', 'Adaptability',
+                            'Critical Thinking', 'Attention to Detail', 'Continuous Learning',
+                            'Collaboration', 'Creativity', 'Agile Methodologies', 'Version Control'
+                        ];
+
+                        skills.forEach((skill, index) => {
+                            const x = Math.random() * (render.options.width - 100) + 50;
+                            const y = Math.random() * (render.options.height - 40) + 20;
+                            let skillBody = Bodies.rectangle(x, y, render.options.width * 0.3, 30, {
+                                restitution: 0.001,  // Rebote alto para evitar que atraviese objetos
+                                frictionAir: 0.3,  // Reduce la aceleración extrema en el aire
+                                collisionFilter: { group: 1 }, // Filtra mejor las colisiones
+                                render: {
+                                    fillStyle: '#f8f8f8',
+                                    strokeStyle: '#000',
+                                    lineWidth: 1
+                                },
+                                chamfer: {
+                                    radius: 10
+                                }
+                            });
+
+                            Composite.add(world, skillBody);
+
+                            Events.on(render, "afterRender", function (event) {
+                                const ctx = render.context;
+                                const { position, angle } = skillBody;
+
+                                ctx.save();
+                                ctx.translate(position.x, position.y);
+                                ctx.rotate(angle);
+                                ctx.fillStyle = "black";
+                                ctx.font = "40 Arial";
+                                ctx.textAlign = "center";
+                                ctx.textBaseline = "middle";
+                                ctx.fillText(skill, 0, 0);
+                                ctx.restore();
+                            });
+
+                            let skillBody1 = Bodies.circle(x, y, 40, {
+                                restitution: 0.1,  // Rebote alto para evitar que atraviese objetos
+                                frictionAir: 0.3,  // Reduce la aceleración extrema en el aire
+                                collisionFilter: { group: 0 }, // Filtra mejor las colisiones
+                                density: 0.001,
+                                render: {
+                                    sprite: {
+                                        texture: './assets/images/bug.svg'
+                                    }
+                                }
+                            })
+
+                            Composite.add(world, skillBody1);
+                        });
+
+
+
+
+                        const walls = [
+                            // Pared superior
+                            Bodies.rectangle(render.options.width / 2, 0, render.options.width, 10, { isStatic: true, render: { visible: false } }),
+                            // Pared inferior
+                            Bodies.rectangle(render.options.width / 2, render.options.height, render.options.width, 10, { isStatic: true, render: { visible: false } }),
+                            // Pared izquierda
+                            Bodies.rectangle(0, render.options.height / 2, 10, render.options.height, { isStatic: true, render: { visible: false } }),
+                            // Pared derecha
+                            Bodies.rectangle(render.options.width, render.options.height / 2, 10, render.options.height, { isStatic: true, render: { visible: false } })
+                        ];
+
+                        Composite.add(world, walls);
+
+                    }
+
+                    function checkMobile() {
+                        create();
+                    }
+
+
+
+                    window.addEventListener('resize', checkMobile);
+                    create();
+                </script>
+            </div>
+
+            <div class="div6 box">
+                <div class="box-blog">
+                    <span class="title-blog">Blog</span>
+                    <span class="subtitle-blog">Debugging Life, One Post at a Time.</span>
+                    <span class="description-blog">(noun) A place where ideas
+                        compile and errors become
+                        lessons.</span>
                 </div>
             </div>
 
-            <div class="about_me_cont">
-                <div class="container">
-                    <div class="_connect">
-                        <div class="about_me_btn">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                        </div>
-                        <span class="about_me_cont_text1 _text">CONECTA Y ELEVA LA CALIDAD DE TU SOFTWARE.</span>
-                        <span class="about_me_cont_text2 _text">Con mi experiencia en pruebas de software y un dominio conocimientos de las
-                            tecnologías front-end y back-end, ayudo a las empresas a alcanzar sus objetivos a través de
-                            soluciones innovadoras y confiables.
-                        </span>
+            <div class="contact box">
+                <img src="./assets/images/fly.png">
+            </div>
+
+            <div class="div8 box" style="
+        --width: 670px;
+        --height: 100px;
+        --quantity: 2;
+        --duration: 18s
+        ">
+                <div class="slider">
+                    <div class="list" style="--delay: 12s">
+                        <div class="item" style="--position: 1"><img src="./assets/images/msg.svg" alt=""></div>
+                        <div class="item" style="--position: 2"><img src="./assets/images/msg.svg" alt=""></div>
+                        <div class="item" style="--position: 3"><img src="./assets/images/msg.svg" alt=""></div>
+                        <div class="item" style="--position: 4"><img src="./assets/images/msg.svg" alt=""></div>
                     </div>
                 </div>
             </div>
-            <img class='_photo_me' src="./public/assets/images/me.png" alt="Foto Gabriel Jaime Useche Ossa">
 
-        </section>
+        </div>
     </main>
 
+    <footer class="site-footer">
+        <div class="footer-container">
+            <img src="./assets/images/logo.svg" alt="Logo de Gabriel Useche" class="footer-icon">
+            <ul class="footer-nav">
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <ul>
+                <li><a href="https://github.com/username" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <img class="icon" src="./assets/images/github.svg" alt="GitHub" class="social-icon">
+                    </a></li>
+                <li><a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn">
+                        <img class="icon" src="./assets/images/linkedin.svg" alt="LinkedIn" class="social-icon">
+                    </a></li>
+                <li><a href="https://twitter.com/username" target="_blank" rel="noopener noreferrer" aria-label="Email">
+                        <img class="icon" src="./assets/images/email.svg" alt="Twitter" class="social-icon">
+                    </a></li>
+            </ul>
+            <p>©2025 Gabriel Useche. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 
 </html>
