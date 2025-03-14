@@ -95,16 +95,17 @@ main {
         margin-left: 0;
     }
 
-    .grid{
-        display: block;
-    }
-
     .grid-hero {
         display: block;
     }
 
     .nav-list.active {
         left: 0;
+    }
+
+    .items{
+        left: 0;
+        margin-left: 50px;
     }
 
     .hamburger-menu.active .bar:nth-child(2) {
