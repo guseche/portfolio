@@ -2,14 +2,14 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     // Navigation functionality
-    const navLinks = document.querySelectorAll('nav a');
-    navLinks.forEach(link => {
-        link.addEventListener('click', function(event) {
-            event.preventDefault();
-            const targetSection = this.getAttribute('href');
-            document.querySelector(targetSection).scrollIntoView({ behavior: 'smooth' });
-        });
-    });
+    // const navLinks = document.querySelectorAll('nav a');
+    // navLinks.forEach(link => {
+    //     link.addEventListener('click', function(event) {
+    //         event.preventDefault();
+    //         const targetSection = this.getAttribute('href');
+    //         document.querySelector(targetSection).scrollIntoView({ behavior: 'smooth' });
+    //     });
+    // });
 
     // Example of a simple interactive element
     const toggleButton = document.getElementById('toggle-menu');

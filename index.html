@@ -15,7 +15,7 @@
             <nav class="site-nav">
                 <a href="./index.html"><img class="icon" src="./assets/images/logo.svg" /></a>
                 <ul class="nav-list">
-                    <li><a href="#about">Sobre mí</a></li>
+                    <li><a href="./about/index.html">Sobre mí</a></li>
                     <li><a href="#projects">Proyectos</a></li>
                     <li><a href="#contact">Contacto</a></li>
                 </ul>
@@ -99,14 +99,6 @@
                 <script>
 
                     function create() {
-
-                        
-
-                        // // Escuchar cambios de tamaño de pantalla
-                        // window.addEventListener("resize", () => {
-                        //     const shouldBeStatic = window.innerWidth < 850;
-                        //     Body.setStatic(myBody, shouldBeStatic);
-                        // });
 
                         const { Engine, Render, Runner, Bodies, Composite, Events, Mouse, MouseConstraint } = Matter;
                         const engine = Engine.create();
@@ -194,9 +186,6 @@
                             Composite.add(world, skillBody1);
                         });
 
-
-
-
                         const walls = [
                             // Pared superior
                             Bodies.rectangle(render.options.width / 2, 0, render.options.width, 10, { isStatic: true, render: { visible: false } }),
@@ -260,7 +249,7 @@
         <div class="footer-container">
             <img src="./assets/images/logo.svg" alt="Logo de Gabriel Useche" class="footer-icon">
             <ul class="footer-nav">
-                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="./about/index.html">Sobre mí</a></li>
                 <li><a href="#projects">Proyectos</a></li>
                 <li><a href="#blog">Blog</a></li>
                 <li><a href="#contact">Contacto</a></li>
@@ -277,7 +266,7 @@
                         <img class="icon" src="./assets/images/email.svg" alt="Twitter" class="social-icon">
                     </a></li>
             </ul>
-            <p>©2025 Gabriel Useche. Todos los derechos reservados.</p>
+            <p>©2025 Gabriel Useche. <br> Todos los derechos reservados.</p>
         </div>
     </footer>
 </body>

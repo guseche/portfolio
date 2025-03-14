@@ -5,6 +5,9 @@
     --purple: #9960E9;
     --black: #000000;
     --gray: #303028;
+
+    /* font size */
+    --font-lg: 18px;
 }
 
 body {
@@ -12,12 +15,13 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--gray);
+    font-size: 100%;
 }
 
 .container {
-    width: 80%;
+    width: 85%;
+    max-width: 1200px;
     margin: auto;
-    overflow: hidden;
 }
 
 .grid-container {
@@ -182,7 +186,7 @@ header {
     display: flex;
     align-items: center;
 
-    img{
+    img {
         width: 120%;
     }
 }
@@ -217,7 +221,7 @@ header {
     font-family: Arial, sans-serif;
     display: flex;
     align-items: center;
-    
+
 }
 
 .box-blog {
@@ -311,7 +315,7 @@ footer {
 
 }
 
-.footer-icon{
+.footer-icon {
     margin: 20px;
 }
 
@@ -352,7 +356,14 @@ footer {
         width: 90%;
     }
 
-    .hero, .emojis, .meme-box, .div4, .div5, .div6, .contact, .div8 {
+    .hero,
+    .emojis,
+    .meme-box,
+    .div4,
+    .div5,
+    .div6,
+    .contact,
+    .div8 {
         grid-area: auto;
         width: 90dvw;
         max-width: 100%;
@@ -381,7 +392,8 @@ footer {
         margin: 5px 0;
     }
 
-    .emojis img, .meme-box img {
+    .emojis img,
+    .meme-box img {
         width: 100%;
     }
 
@@ -397,7 +409,7 @@ footer {
         flex-direction: column;
         gap: 10px;
     }
-    
+
     .footer-nav li {
         margin: 5px 0;
     }
@@ -467,8 +479,8 @@ footer {
             padding: 10px 0;
         }
 
-        .footer-nav li{
-            margin: 0 20px;
+        .footer-nav li {
+            margin: 0 3px;
         }
 
         .icon {
@@ -484,4 +496,6 @@ footer {
             padding-bottom: 20px;
         }
     }
+
+
 }

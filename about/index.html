@@ -1,47 +1,116 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acerca de Mí</title>
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/blog.css">
-    <link rel="stylesheet" href="../../css/projects.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/about.css">
 </head>
+
 <body>
-    <header>
-        <h1>Acerca de Mí</h1>
-        <nav>
-            <ul>
-                <li><a href="../../index.html">Inicio</a></li>
-                <li><a href="../blog/index.html">Blog</a></li>
-                <li><a href="../projects/index.html">Proyectos</a></li>
-                <li><a href="../contact/index.html">Contáctame</a></li>
-            </ul>
-        </nav>
+
+    <header class="site-header">
+        <div class="container">
+            <nav class="site-nav">
+                <a href="../index.html"><img class="icon" src="../assets/images/logo.svg" /></a>
+                <ul class="nav-list">
+                    <li><a href="./index.html">Sobre mí</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section>
-            <h2>Bienvenido a mi portafolio</h2>
-            <p>Hola, soy [Tu Nombre], un apasionado de [tu profesión o área de especialización]. Aquí puedes encontrar información sobre mis proyectos, mis publicaciones en el blog y un poco más sobre mí.</p>
-        </section>
-        <section>
-            <h2>Mi Historia</h2>
-            <p>[Escribe aquí una breve biografía sobre ti, tus experiencias y habilidades.]</p>
-        </section>
-        <section>
-            <h2>Habilidades</h2>
-            <ul>
-                <li>[Habilidad 1]</li>
-                <li>[Habilidad 2]</li>
-                <li>[Habilidad 3]</li>
-                <li>[Habilidad 4]</li>
-            </ul>
-        </section>
+
+    <main class="container">
+
+        <div>
+            <h2 class="title title-perfil">Perfil</h2>
+            <p class="text-perfil">Gabriel Useche es un QA Automation Engineer
+                con experiencia en empresas como Bancolombia, Banco Agricola y Grupo Inditex. Con más de 8 años de
+                experiencia creando frameworks de automatización robustos, su trabajo combina Quality Assurance,
+                Desarrollo de Software, DevOps y Continuous Integration.</p>
+        </div>
+
+        <div class="grid-hero">
+            
+            <div class="photo">
+                <img alt="Gabriel Useche portrait" loading="lazy" decoding="async" class=""
+                    src="../assets/images/hero.webp" style="color: transparent;">
+            </div>
+
+            <div class="abilities grid">
+                <h2 class="title">Habilidades</h2>
+                <ul class="items">
+                    <li>Selenium WebDriver</li>
+                    <li>Cypress</li>
+                    <li>Playwright</li>
+                    <li>Appium</li>
+                    <li>REST Assured</li>
+                    <li>JMeter</li>
+                    <li>Azure/GitHub Actions</li>
+                </ul>
+            </div>
+
+            <div class="interests grid">
+                <h2 class="title">Intereses</h2>
+                <ul class="items">
+                    <li>Desarrollo Frontend</li>
+                    <li>Arquitectura de pruebas</li>
+                    <li>Inteligencia Artificial</li>
+                    <li>Metodologías ágiles</li>
+                    <li>Comunidades open source</li>
+                </ul>
+            </div>
+
+            <div class="contact-about">
+                <p class="">Gabriel está abierto a nuevas retos y colaboraciones en proyectos de
+                    automatización,
+                    no dudes en contactarle.
+                </p>
+            </div>
+        </div>
+        </div>
+
+        <div>
+            <h2 class="title title-perfil">Pasión</h2>
+            <p class="text-perfil text-passion">Disfruta creando soluciones de automatización
+                que mejoran la calidad del software y optimizan los procesos de testing. Su afición por el
+                desarrollo le permite construir herramientas que facilitan el trabajo de los equipos de QA y
+                desarrollo.</p>
+        </div>
+
+        <footer class="site-footer">
+            <div class="footer-container">
+                <img src="../assets/images/logo.svg" alt="Logo de Gabriel Useche" class="footer-icon">
+                <ul class="footer-nav">
+                    <li><a href="./index.html">Sobre mí</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://github.com/username" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub">
+                            <img class="icon" src="../assets/images/github.svg" alt="GitHub" class="social-icon">
+                        </a></li>
+                    <li><a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer"
+                            aria-label="LinkedIn">
+                            <img class="icon" src="../assets/images/linkedin.svg" alt="LinkedIn" class="social-icon">
+                        </a></li>
+                    <li><a href="https://twitter.com/username" target="_blank" rel="noopener noreferrer"
+                            aria-label="Email">
+                            <img class="icon" src="../assets/images/email.svg" alt="Twitter" class="social-icon">
+                        </a></li>
+                </ul>
+                <p>©2025 Gabriel Useche. <br> Todos los derechos reservados.</p>
+            </div>
+        </footer>
+
+
     </main>
-    <footer>
-        <p>&copy; [Año] [Tu Nombre]. Todos los derechos reservados.</p>
-    </footer>
-    <script src="../../js/main.js"></script>
 </body>
+
 </html>
