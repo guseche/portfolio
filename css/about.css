@@ -120,4 +120,8 @@ main {
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    .text-perfil {
+        font-size: 2rem;
+    }
+
 }
