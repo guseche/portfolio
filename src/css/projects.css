@@ -1,0 +1,594 @@
+@import 'style.css';
+
+:root {
+    --radius: 10px;
+    --transition: all 0.3s ease;
+    --shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    /* Spacing System - Compacto */
+    --space-xs: 0.25rem;
+    /* 4px */
+    --space-sm: 0.5rem;
+    /* 8px */
+    --space-md: 0.75rem;
+    /* 12px */
+    --space-lg: 1rem;
+    /* 16px */
+    --space-xl: 1.25rem;
+    /* 20px */
+    --space-2xl: 1.5rem;
+    /* 24px */
+    --space-3xl: 2rem;
+    /* 32px */
+    --space-4xl: 2.5rem;
+    /* 40px */
+}
+
+.projects-page {
+    background-color: var(--gray);
+    min-height: 100vh;
+    color: var(--white);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Layout optimizado - Compacto */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 var(--space-sm);
+}
+
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.items-start {
+    align-items: flex-start;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Spacing - Sistema compacto */
+.py-20 {
+    padding: var(--space-2xl) 0;
+}
+
+.p-6 {
+    padding: var(--space-lg);
+}
+
+.p-8 {
+    padding: var(--space-xl);
+}
+
+.px-2 {
+    padding: 0 var(--space-xs);
+}
+
+.px-3 {
+    padding: 0 var(--space-sm);
+}
+
+.py-1 {
+    padding: var(--space-xs) 0;
+}
+
+/* Margins compactos */
+.mb-2 {
+    margin-bottom: var(--space-xs);
+}
+
+.mb-3 {
+    margin-bottom: var(--space-sm);
+}
+
+.mb-4 {
+    margin-bottom: var(--space-md);
+}
+
+.mb-6 {
+    margin-bottom: var(--space-lg);
+}
+
+.mb-12 {
+    margin-bottom: var(--space-2xl);
+}
+
+.mt-4 {
+    margin-top: var(--space-md);
+}
+
+/* Grid gaps compactos */
+.gap-6 {
+    gap: var(--space-lg);
+}
+
+.gap-8 {
+    gap: var(--space-xl);
+}
+
+/* Typography compacta */
+.text-xs {
+    font-size: 0.75rem;
+    line-height: 1.3;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
+.text-lg {
+    font-size: var(--font-lg);
+    line-height: 1.5;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+    line-height: 1.3;
+}
+
+.text-3xl {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    line-height: 1.2;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Colors */
+.text-white {
+    color: var(--white);
+}
+
+.text-gray-400 {
+    color: var(--white);
+    opacity: 0.7;
+}
+
+.text-green-400 {
+    color: var(--green);
+    font-weight: bold;
+}
+
+.text-orange-400 {
+    color: #fb923c;
+    font-weight: bold;
+}
+
+/* Project Cards compactas - Enhanced */
+.bg-gray-800 {
+    /* background: var(--blue); */
+    border-radius: var(--radius);
+    /* transition: all 0.3s ease; */
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-gray-800::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.bg-gray-800:hover::before {
+    left: 100%;
+}
+
+.bg-gray-800:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* Border styles */
+.border {
+    border: 1px solid;
+}
+
+.border-gray-700 {
+    border-color: rgba(55, 65, 81, 0.5);
+}
+
+.hover\:border-green:hover {
+    border-color: var(--green);
+}
+
+/* Transition styles */
+.transition-colors {
+    transition: border-color 0.15s ease-in-out;
+}
+
+/* Rounded styles */
+.rounded-lg {
+    border-radius: var(--radius);
+}
+
+.rounded-full {
+    border-radius: 9999px;
+    font-weight: bold;
+    padding: var(--space-xs) var(--space-sm);
+    margin: var(--space-xs) var(--space-xs) 0 0;
+    display: inline-block;
+}
+
+/* Badges compactos - Enhanced */
+.bg-blue-600 {
+    background: var(--blue);
+    transition: all 0.3s ease;
+}
+
+.bg-green-600 {
+    background: var(--green);
+    color: var(--black);
+    transition: all 0.3s ease;
+}
+
+.bg-purple-600 {
+    background: var(--purple);
+    transition: all 0.3s ease;
+}
+
+.bg-orange-600 {
+    background: #ea580c;
+    transition: all 0.3s ease;
+}
+
+.rounded-full:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Button compacto - Menu-like behavior */
+.btn-primary {
+    background: transparent;
+    color: var(--white);
+    padding: var(--space-sm) var(--space-lg);
+    margin-top: var(--space-sm);
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    display: inline-block;
+    border: 2px solid var(--white);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary:hover {
+    color: var(--green);
+    border-color: var(--green);
+}
+
+/* Section improvements */
+section {
+    margin-bottom: var(--space-3xl);
+}
+
+section .flex {
+    margin-bottom: var(--space-xl);
+}
+
+/* Enhanced section headers */
+section h1,
+section h2 {
+    position: relative;
+    margin-bottom: var(--space-md);
+}
+
+section h1::after,
+section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--green), transparent);
+    border-radius: 2px;
+}
+
+/* Improved grid spacing */
+.grid {
+    margin-top: var(--space-lg);
+}
+
+.card-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Responsive compacto - Enhanced */
+@media (min-width: 768px) {
+    .md\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .md\:grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .md\:flex-row {
+        flex-direction: row;
+    }
+
+    .md\:items-center {
+        align-items: center;
+    }
+
+    section .flex {
+        align-items: flex-end;
+    }
+}
+
+@media (min-width: 1024px) {
+    .lg\:grid-cols-4 {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .bg-gray-800:hover {
+        transform: translateY(-10px);
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        width: 95%;
+        padding: 0 var(--space-xs);
+    }
+
+    .py-20 {
+        padding: var(--space-xl) 0;
+    }
+
+    .gap-8,
+    .gap-6 {
+        gap: var(--space-sm);
+    }
+
+    .p-6 {
+        padding: var(--space-sm);
+    }
+
+    .p-8 {
+        padding: var(--space-md);
+    }
+
+    .btn-primary {
+        padding: var(--space-xs) var(--space-md);
+        font-size: 0.875rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    section h1::after,
+    section h2::after {
+        width: 40px;
+        height: 2px;
+    }
+
+}
+
+/* Modal styles - Enhanced for dialog */
+dialog{
+    background-color: transparent;
+    border: none;
+    width: 90%;
+    max-width: 700px;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background: linear-gradient(135deg, #1f1f1f 0%, #2a2a2a 100%);
+    padding: var(--space-3xl);
+    border-radius: var(--radius);
+    overflow-y: auto;
+    box-shadow: var(--shadow), 0 0 0 1px rgba(255, 255, 255, 0.1);
+    position: relative;
+    transform: scale(0.9) translateY(-20px);
+    transition: var(--transition);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal-overlay.active .modal-content {
+    transform: scale(1) translateY(0);
+}
+
+.modal-close-button {
+    position: absolute;
+    top: var(--space-lg);
+    right: var(--space-lg);
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    font-size: 1.5rem;
+    color: var(--white);
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    z-index: 1001;
+}
+
+.modal-close-button:hover {
+    background: var(--green);
+    color: var(--black);
+    transform: scale(1.1);
+}
+
+.modal-title {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 700;
+    margin-bottom: var(--space-lg);
+    color: var(--white);
+    line-height: 1.2;
+    padding-right: var(--space-4xl);
+}
+
+.modal-description {
+    font-size: var(--font-lg);
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin-bottom: var(--space-xl);
+}
+
+.badge-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-xl);
+}
+
+.btn-modal {
+    display: flex;
+    gap: var(--space-md);
+    flex-wrap: nowrap;
+}
+
+.btn-github-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    width: 100%;
+    margin-top: var(--space-xl);
+    background: linear-gradient(135deg, var(--purple) 0%, #8b5cf6 100%);
+    border: none;
+    border-radius: var(--radius);
+    font-weight: 600;
+    padding: var(--space-lg) var(--space-xl);
+    color: var(--white);
+    text-decoration: none;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-github-modal::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.btn-github-modal:hover::before {
+    left: 100%;
+}
+
+.btn-github-modal:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(139, 92, 246, 0.4);
+}
+
+.icon-modal {   
+    position: absolute;
+    inset: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.modal-image{
+    width: 60%;
+    height: auto;
+    border-radius: var(--radius);
+    margin: 20px auto;
+}
+
+/* Responsive improvements for dialog */
+@media (max-width: 640px) {
+    .modal-content {
+        padding: var(--space-xl);
+        width: 95%;
+        margin: var(--space-lg);
+    }
+    
+    .modal-close-button {
+        top: var(--space-sm);
+        right: var(--space-sm);
+        width: 35px;
+        height: 35px;
+        font-size: 1.25rem;
+    }
+    
+    .modal-title {
+        padding-right: var(--space-3xl);
+        margin-bottom: var(--space-md);
+    }
+    
+    .btn-github-modal {
+        padding: var(--space-md) var(--space-lg);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .modal-overlay,
+    .modal-content,
+    .modal-close-button,
+    .btn-github-modal {
+        transition: none;
+    }
+}

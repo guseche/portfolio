@@ -1,0 +1,283 @@
+{
+  "automation": [
+    {
+      "id": "api-testing-framework",
+      "emoji": "🔗",
+      "status": "pass",
+      "date": "01/01/2024",
+      "technologies": [
+        "Playwright",
+        "TypeScript",
+        "Jest",
+        "REST API",
+        "GraphQL"
+      ],
+      "github": "https://github.com/usuario/api-testing-framework",
+      "type": {
+        "es": "Automatización",
+        "en": "Automation"
+      },
+      "title": {
+        "es": "API Testing Framework",
+        "en": "API Testing Framework"
+      },
+      "description": {
+        "es": "Framework para pruebas de APIs REST y GraphQL.",
+        "en": "Framework for REST and GraphQL API testing."
+      },
+      "detailedDescription": {
+        "es": "Framework completo de automatización para pruebas de APIs REST y GraphQL. Incluye validación de esquemas, pruebas de rendimiento y generación de reportes automáticos.",
+        "en": "Complete automation framework for REST and GraphQL API testing. Includes schema validation, performance testing, and automatic report generation."
+      },
+      "features": {
+        "es": [
+          "Validación automática de esquemas JSON",
+          "Pruebas de rendimiento integradas",
+          "Generación de reportes HTML",
+          "Soporte para múltiples entornos",
+          "Integración con CI/CD"
+        ],
+        "en": [
+          "Automatic JSON schema validation",
+          "Integrated performance testing",
+          "HTML report generation",
+          "Multi-environment support",
+          "CI/CD integration"
+        ]
+      }
+    },
+    {
+      "id": "performance-monitor",
+      "type": {
+        "es": "Automatización",
+        "en": "Automation"
+      },
+      "emoji": "📊",
+      "status": "pass",
+      "date": "01/07/2024",
+      "technologies": [
+        "Lighthouse",
+        "Puppeteer",
+        "Node.js",
+        "Docker"
+      ],
+      "github": "https://github.com/usuario/performance-monitor",
+      "title": {
+        "es": "Performance Monitor",
+        "en": "Performance Monitor"
+      },
+      "description": {
+        "es": "Monitoreo automático de rendimiento web.",
+        "en": "Automated web performance monitoring."
+      },
+      "detailedDescription": {
+        "es": "Sistema de monitoreo continuo del rendimiento web que analiza métricas Core Web Vitals y genera alertas automáticas.",
+        "en": "Continuous web performance monitoring system that analyzes Core Web Vitals metrics and generates automatic alerts."
+      },
+      "features": {
+        "es": [
+          "Análisis de Core Web Vitals",
+          "Alertas automáticas por email",
+          "Dashboard en tiempo real",
+          "Histórico de métricas",
+          "Comparación entre versiones"
+        ],
+        "en": [
+          "Core Web Vitals analysis",
+          "Automatic email alerts",
+          "Real-time dashboard",
+          "Metrics history",
+          "Version comparison"
+        ]
+      }
+    },
+    {
+      "id": "security-testing-suite",
+      "type": {
+        "es": "Automatización",
+        "en": "Automation"
+      },
+      "emoji": "🔒",
+      "status": "pass",
+      "date": "01/03/2024",
+      "technologies": [
+        "OWASP ZAP",
+        "Burp Suite",
+        "Python",
+        "Docker"
+      ],
+      "github": "https://github.com/usuario/security-testing-suite",
+      "title": {
+        "es": "Security Testing Suite",
+        "en": "Security Testing Suite"
+      },
+      "description": {
+        "es": "Automatización de pruebas de seguridad.",
+        "en": "Security testing automation."
+      },
+      "detailedDescription": {
+        "es": "Suite completa de pruebas de seguridad automatizadas que incluye análisis de vulnerabilidades, pruebas de penetración y auditorías de código.",
+        "en": "Complete automated security testing suite including vulnerability analysis, penetration testing, and code audits."
+      },
+      "features": {
+        "es": [
+          "Escaneo de vulnerabilidades automático",
+          "Pruebas de inyección SQL",
+          "Análisis de autenticación",
+          "Reportes de seguridad detallados",
+          "Integración con pipelines"
+        ],
+        "en": [
+          "Automated vulnerability scanning",
+          "SQL injection testing",
+          "Authentication analysis",
+          "Detailed security reports",
+          "Pipeline integration"
+        ]
+      }
+    }
+  ],
+  "development": [
+    {
+      "id": "ecommerce-testing-suite",
+      "type": {
+        "es": "Desarrollo",
+        "en": "Development"
+      },
+      "emoji": "⚙️",
+      "status": "pass",
+      "date": "01/05/2024",
+      "technologies": [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Express"
+      ],
+      "github": "https://github.com/usuario/ecommerce-testing-suite",
+      "demo": "https://ecommerce-testing-demo.vercel.app",
+      "screenshot": "./assets/images/ecommerce-testing-suite.jpg",
+      "title": {
+        "es": "E-Commerce Testing Suite",
+        "en": "E-Commerce Testing Suite"
+      },
+      "description": {
+        "es": "Suite completa de automatización para plataforma e-commerce.",
+        "en": "Complete automation suite for e-commerce platform."
+      },
+      "detailedDescription": {
+        "es": "Plataforma completa de testing para e-commerce que incluye pruebas de funcionalidad, rendimiento y seguridad con dashboard administrativo.",
+        "en": "Complete e-commerce testing platform including functionality, performance, and security tests with administrative dashboard."
+      },
+      "features": {
+        "es": [
+          "Dashboard administrativo completo",
+          "Pruebas automatizadas de checkout",
+          "Validación de pagos",
+          "Pruebas de inventario",
+          "Reportes en tiempo real"
+        ],
+        "en": [
+          "Complete administrative dashboard",
+          "Automated checkout testing",
+          "Payment validation",
+          "Inventory testing",
+          "Real-time reports"
+        ]
+      }
+    },
+    {
+      "id": "task-manager-pro",
+      "type": {
+        "es": "Desarrollo",
+        "en": "Development"
+      },
+      "emoji": "💻",
+      "status": "deploy",
+      "date": "01/04/2024",
+      "technologies": [
+        "Vue.js",
+        "Laravel",
+        "MySQL",
+        "Redis"
+      ],
+      "github": "https://github.com/usuario/task-manager-pro",
+      "demo": "https://task-manager-pro-demo.com",
+      "screenshot": "./assets/images/task-manager-pro.jpg",
+      "title": {
+        "es": "Task Manager Pro",
+        "en": "Task Manager Pro"
+      },
+      "description": {
+        "es": "Aplicación web avanzada para gestión de tareas y proyectos.",
+        "en": "Advanced web application for task and project management."
+      },
+      "detailedDescription": {
+        "es": "Aplicación web profesional para gestión de tareas con colaboración en tiempo real, seguimiento de tiempo y reportes avanzados.",
+        "en": "Professional web application for task management with real-time collaboration, time tracking, and advanced reporting."
+      },
+      "features": {
+        "es": [
+          "Colaboración en tiempo real",
+          "Seguimiento de tiempo integrado",
+          "Tableros Kanban personalizables",
+          "Reportes y analytics",
+          "Notificaciones push"
+        ],
+        "en": [
+          "Real-time collaboration",
+          "Integrated time tracking",
+          "Customizable Kanban boards",
+          "Reports and analytics",
+          "Push notifications"
+        ]
+      }
+    },
+    {
+      "id": "mobile-testing-lab",
+      "type": {
+        "es": "Desarrollo",
+        "en": "Development"
+      },
+      "emoji": "📱",
+      "status": "pass",
+      "date": "01/05/2024",
+      "technologies": [
+        "React Native",
+        "Firebase",
+        "Jest",
+        "Detox"
+      ],
+      "github": "https://github.com/usuario/mobile-testing-lab",
+      "demo": "https://mobile-testing-lab-demo.com",
+      "screenshot": "./assets/images/mobile-testing-lab.jpg",
+      "title": {
+        "es": "Mobile Testing Lab",
+        "en": "Mobile Testing Lab"
+      },
+      "description": {
+        "es": "Laboratorio completo de pruebas automatizadas para apps móviles.",
+        "en": "Complete automated testing laboratory for mobile apps."
+      },
+      "detailedDescription": {
+        "es": "Laboratorio virtual para pruebas de aplicaciones móviles con simuladores integrados y pruebas automatizadas cross-platform.",
+        "en": "Virtual laboratory for mobile app testing with integrated simulators and cross-platform automated testing."
+      },
+      "features": {
+        "es": [
+          "Simuladores iOS y Android",
+          "Pruebas automatizadas cross-platform",
+          "Análisis de rendimiento móvil",
+          "Reportes de compatibilidad",
+          "Integración con app stores"
+        ],
+        "en": [
+          "iOS and Android simulators",
+          "Cross-platform automated testing",
+          "Mobile performance analysis",
+          "Compatibility reports",
+          "App store integration"
+        ]
+      }
+    }
+  ]
+}

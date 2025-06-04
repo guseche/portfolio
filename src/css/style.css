@@ -16,6 +16,7 @@ body {
     padding: 0;
     background-color: var(--gray);
     font-size: 100%;
+    width: 100vdh;
 }
 
 .container {
@@ -55,7 +56,6 @@ header {
     justify-content: space-between;
     list-style-type: none;
     padding: 0;
-    margin-left: 20px;
 }
 
 .nav-list li {
@@ -293,7 +293,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
+    margin: 30px auto 10px;
     flex-direction: column;
 
     ul {
@@ -313,14 +313,6 @@ footer {
         color: var(--green);
     }
 
-}
-
-.footer-icon {
-    margin: 20px;
-}
-
-.footer-nav li {
-    margin: 0 40px;
 }
 
 .social-links {
@@ -344,6 +336,7 @@ footer {
 }
 
 .icon {
+    margin-right: 10px;
     width: 30px;
     height: 30px;
 }
